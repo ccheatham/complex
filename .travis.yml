@@ -21,8 +21,8 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: " complex2 "
-  env: " Complex2 -env"
+  app: "complex2 "
+  env: "Complex2-env"
   bucket_name: "elasticbeanstalk-us-east-1-144468571614"
   bucket_path: "complex2"
   on: 
