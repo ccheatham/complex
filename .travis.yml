@@ -18,15 +18,15 @@ after_success:
   - docker push ccheatham/complex-server
   - docker push ccheatham/complex-nginx
   - docker push ccheatham/complex-worker
-# deploy:
-#   provider: elasticbeanstalk
-#   region: "us-east-1"
-#   app: "react-app"
-#   env: "ReactApp-env"
-#   bucket_name: "elasticbeanstalk-us-east-1-144468571614"
-#   bucket_path: "react-app"
-#   on: 
-#     branch: master
-#   access_key_id: $AWS_ACCESS_KEY
-#   secret_access_key:
-#     secure: "$AWS_SECRET_KEY"
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: " complex2 "
+  env: " Complex2 -env"
+  bucket_name: "elasticbeanstalk-us-east-1-144468571614"
+  bucket_path: "complex2"
+  on: 
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
